@@ -10,6 +10,7 @@ http://192.168.10.12:30000/index.php
 ![](docs/img/example.png)
 
 # 使用方法
+##yaml
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -48,6 +49,7 @@ metadata:
   name: test-epi-srv
 spec:
   type: NodePort
+  externalTrafficPolicy: Local
   selector:
     app: epi
   ports:
@@ -55,4 +57,17 @@ spec:
       port: 80
       targetPort: 80
       nodePort: 30000
+```
+
+## 要点の説明
+
+#### KubernetesのDownloadAPIを使用して以下の環境変数へ値を取り込んでいます。
+```
+KUBERNETES_NODE_NAME
+KUBERNETES_POD_NAME
+```
+
+#### ノードをまたぐバランシングを行わないようにします。
+```
+externalTrafficPolicy: Local
 ```
