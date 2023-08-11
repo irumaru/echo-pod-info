@@ -1,0 +1,8 @@
+version: "3"
+services:
+  php:
+    build:
+      context: ../
+      dockerfile: docker-release/Dockerfile
+    image: irumaru/echo-pod-info:0.1.0
+    network_mode: "host"
