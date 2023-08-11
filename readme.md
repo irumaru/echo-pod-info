@@ -1,6 +1,10 @@
 # 概要
 Kubernetesで実行すると、Pod名・ホスト名・IPアドレス等をhttpで出力します。   
 
+# URL
+https://github.com/irumaru/echo-pod-info  
+https://hub.docker.com/r/irumaru/echo-pod-info
+
 # 使用例
 http://192.168.10.12:30000/index.php
 ![](docs/img/example.png)
