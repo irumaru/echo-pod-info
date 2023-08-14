@@ -4,7 +4,8 @@ $envs = [
     ['Node name', 'KUBERNETES_NODE_NAME'],
     ['Pod name', 'KUBERNETES_POD_NAME'],
     ['Host name', 'HOSTNAME'],
-    ['Server ip address', 'SERVER_ADDR']
+    ['Server ip address', 'SERVER_ADDR'],
+    ['Client ip address', 'REMOTE_ADDR']
 ];
 
 ?>
