@@ -20,6 +20,7 @@ $envs = [
 <body>
     <div class="container">
         <h1>Pod Environment</h1>
+        <p>Server time: <?php echo date("Y/m/d H:i:s") ?></p>
         <table class="table">
             <tr>
                 <th>Item</th>
