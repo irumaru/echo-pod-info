@@ -1,5 +1,6 @@
 # 概要
-Kubernetesで実行すると、Pod名・ホスト名・IPアドレス等をhttpで出力します。   
+Kubernetesで実行すると、Pod名・ホスト名・IPアドレス等をhttpで出力します。  
+0.5秒に1回表示されている情報を更新して、0.1秒以内に応答がないとオフライン表示に変わります。  
 
 # URL
 https://github.com/irumaru/echo-pod-info  
@@ -30,7 +31,7 @@ spec:
     spec:
       containers:
       - name: epi
-        image: irumaru/echo-pod-info:0.1.0
+        image: irumaru/echo-pod-info:0.4.0
         env:
         - name: KUBERNETES_NODE_NAME
           valueFrom:
