@@ -4,5 +4,5 @@ services:
     build:
       context: ../
       dockerfile: docker-release/Dockerfile
-    image: irumaru/echo-pod-info:0.3.0
+    image: irumaru/echo-pod-info:0.4.0
     network_mode: "host"
