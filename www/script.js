@@ -13,7 +13,7 @@ async function fetchWithTimeout(url, options, timeout) {
 
 async function updateInfo(){
     try {
-        const timeoutMilliseconds = 200; // タイムアウトを設定するミリ秒
+        const timeoutMilliseconds = 500; // タイムアウトを設定するミリ秒
         const info = await fetchWithTimeout('info.php', {}, timeoutMilliseconds);
         const infoText = await info.text();
         infoDom.innerHTML = infoText;
